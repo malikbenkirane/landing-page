@@ -1,59 +1,26 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
+<section class="flex flex-col h-full justify-center items-center" >
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
+  <section class="flex flex-col justify-center items-center">
+    <h1 class="text-4xl">Malik Benkirane</h1>
+  </section>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+    check my <a class="text-cyan-400" href="malikbenkirane_resume.pdf">resume</a>
 	</h2>
 
-	<Counter />
+  <div class="flex relative top-6">
+    <img class="h-36" src="https://raw.githubusercontent.com/rfyiamcool/golang_logo/master/svg/golang_3.svg" alt="go <3">
+    <div class="flex flex-col justify-center items-center">
+      <section class="inline-flex flex-row gap-1">
+        <img class="h-8" src="https://go.dev/images/go-logo-blue.svg" alt="go logo">
+        <h1 class="text-xl">lang</h1>
+      </section>
+      <h1 class="text-xl">Engineer</h1>
+    </div>
+  </div>
+
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
